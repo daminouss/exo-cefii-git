@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <title>Document</title> </head>
+<body>
+    <form action="PersonnageManager.php" method="POST">        
+        <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" class="form-control" id="nom" name="nom">
+        </div>
+        
+        <div class="form-group">
+        <label for="classe">classe</label>
+        <input type="select" class="form-control" id="classe" name="classe">
+        <select id="classe" name="classe">
+            <option value="Null">choisissez</option>
+			<option value="guerrier">Guerrier</option>
+            <option value="ouvrier">Ouvrier</option>
+            <option value="explorateur">Explorateur</option>
+        </div>
+        <h2>Civilisation</h2>
+        <div class="form-group">
+            <label for="civilisation">Civilisation</label>
+            <input type="select" class="form-control" id="civilisation" name="civilisation">
+            <select id="civilisation" name="civilisation">
+                <option value="Null">choisissez</option>
+                <option value="norvege">Norvége</option>
+                <option value="Angleterre">Angleterre</option>
+                <option value="france">France</option>
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-2">Ajouter</button>
+    </form>
+
+</body>
+</html>
